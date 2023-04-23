@@ -1,0 +1,80 @@
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": ["Hi", "Hello", "Hey there", "Greetings", "Good morning", "Good afternoon", "Good evening"],
+        "responses": ["Hi there! How can I assist you today?"]
+      },
+      {
+        "tag": "goodbye",
+        "patterns": ["Bye", "Goodbye", "See you later", "Talk to you later"],
+        "responses": ["Goodbye! Take care.", "See you later!", "Take care and stay safe."]
+      },
+      {
+        "tag": "thanks",
+        "patterns": ["Thanks", "Thank you", "Appreciate it", "Thanks a lot"],
+        "responses": ["You're welcome!", "Glad to help.", "No problem."]
+      },
+      {
+        "tag": "positive",
+        "patterns": ["I'm feeling good today", "I had a great day", "I feel happy"],
+        "responses": ["That's great to hear! What else is on your mind today?", "I'm happy to hear that. What brings you here today?"]
+      },
+      {
+        "tag": "negative",
+        "patterns": ["I'm feeling sad", "I'm struggling with depression", "I feel anxious"],
+        "responses": ["I'm sorry to hear that. Can you tell me more about what's been going on?", "I'm here to listen. Would you like to talk about what's been bothering you?"]
+      },
+      {
+        "tag": "problem",
+        "patterns": ["I'm having trouble sleeping", "I'm struggling with addiction", "I'm having relationship issues"],
+        "responses": ["Let's talk about that. Can you tell me more about what's been going on?", "I'm here to help. What specifically has been bothering you?"]
+      },
+      {
+        "tag": "advice",
+        "patterns": ["What do you suggest I do?", "Do you have any advice for me?", "How can I handle this situation?"],
+        "responses": ["Well, there are a few things you could try. Would you like me to suggest some options?", "I'm happy to help. Let's explore some possible solutions together."]
+      },
+      {
+        "tag": "gratitude",
+        "patterns": ["Thank you for listening", "I appreciate your help", "Thank you for your time"],
+        "responses": ["You're welcome. I'm here to support you.", "It's my pleasure to help. Don't hesitate to reach out if you need anything else."]
+      },
+      {
+        "tag": "fallback",
+        "patterns": ["I don't understand", "Can you repeat that?", "Sorry, I didn't catch that"],
+        "responses": ["I'm sorry, could you please rephrase that?", "I didn't quite understand. Can you try saying that in a different way?"]
+      },
+      {
+        "tag": "recommend_plan",
+        "patterns": ["I need help", "I'm feeling low", "I'm struggling", "I'm not sure which plan is right for me", "What plan do you recommend?"],
+        "responses": ["Sure, can you tell me more about what's been going on?", "I'm here to help. Can you describe how you've been feeling lately?"],
+        "context_set": "plan_choice"
+      },
+      {
+        "tag": "sathi_plan",
+        "patterns": ["I just need someone to talk to", "I'm not sure I need professional help", "I'm feeling okay but could use some support"],
+        "responses": ["Based on what you've said, it sounds like our Sathi plan might be a good fit for you. This plan is designed for people who want to talk to someone but don't need professional counseling. You'll have access to trained listeners who can provide support and guidance. Would you like to learn more about this plan?"],
+        "context_filter": "plan_choice"
+      },
+      {
+        "tag": "samuha_plan",
+        "patterns": ["I'd like to talk to others who understand what I'm going through", "I feel like I could benefit from group support", "I want to connect with people who share similar struggles"],
+        "responses": ["It sounds like our Samuha plan might be a good fit for you. This plan is designed for people who want to connect with others in a group setting. You'll have access to moderated group sessions where you can share your experiences, receive support, and connect with others who understand what you're going through. Would you like to learn more about this plan?"],
+        "context_filter": "plan_choice"
+      },
+      {
+        "tag": "sahayogi_plan",
+        "patterns": ["I'm struggling with something and need professional help", "I'm dealing with a serious issue and need to talk to a counselor", "I need help from a mental health professional"],
+        "responses": ["Based on what you've said, it sounds like our Sahayogi plan might be a good fit for you. This plan is designed for people who need support from a professional counselor. You'll have access to licensed counselors who can provide personalized guidance and support to help you work through your challenges. Would you like to learn more about this plan?"],
+        "context_filter": "plan_choice"
+      },
+      {
+        "tag": "fallback",
+        "patterns": ["I don't understand", "Can you repeat that?", "Sorry, I didn't catch that"],
+        "responses": ["I'm sorry, could you please rephrase that?", "I didn't quite understand. Can you try saying that in a different way?"],
+        "context_filter": "plan_choice"
+      }
+    ]
+  }
+  

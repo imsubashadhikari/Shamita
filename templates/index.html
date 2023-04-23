@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>shamita-home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link href="/static/css/home.css" rel="stylesheet" />
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-white nav navbar-nav navbar-right ">
+    <li><a href="{{url_for('home')}}"><img src="/static/img/logo.png" alt="Shamita-logo"
+          style="width: 5rem; height:4rem;"></li>
+
+  </nav> <br>
+  <nav class="navbar navbar-expand-lg bg-white nav navbar-nav navbar-right ">
+    <div>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav navbar-right">
+            <div class="btn-group">
+              <a class="nav-link mr-2" href="{{ url_for('home') }}">
+                <button type="button" class="btn btn-primary btn-custom">Home</button>
+              </a>
+              <a class="nav-link mr-2" href="#">
+                <button type="button" class="btn btn-primary btn-custom">About Us</button>
+              </a>
+              <a class="nav-link mr-2" href="#">
+                <button type="button" class="btn btn-primary btn-custom">Contact Us</button>
+              </a>
+            </div>
+          </li>
+
+          <li class="nav navbar-right">
+            <div class="btn-group">
+              <a class="nav-link" href="{{ url_for('plans') }}">
+                <button type="button" class="btn btn-primary btn-custom">Our Plans</button>
+              </a>
+              <a class="nav-link" href="{{ url_for('chatbot') }}">
+                <button type="button" class="btn btn-primary btn-custom">Chatbot</button>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+  <div class="bio-left">
+    <h1>Is it hurting <br> that bad??</h1>
+  </div>
+  <div class="bio-right">
+    <h1>Just let it out</h1>
+  </div>
+
+  <div class="text-center" style="padding:2rem;">
+    <img src="/static/img/img1.png" class="img-fluid" alt="" />
+  </div>
+
+  <div class=" text-wrap" style="padding:0rem;">
+    <p class="text-center lh-lg text-wrap"> "You dont have to struggle in silence. You can be un-silent. You can live
+      well
+      with mental health condition, as long as you can open up to somebody about it."
+
+    </p>
+
+  </div>
+
+
+
+
+  <!-- <img src="img/img1.png" class="img-fluid" alt="body-image"> -->
+
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

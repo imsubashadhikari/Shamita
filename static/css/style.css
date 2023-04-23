@@ -1,0 +1,33 @@
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    color: #333;
+    background:#6a84;
+  }
+  
+  .carousel-item active{
+    height: 100vh;
+    min-height: 300px;
+    position:absolute;
+  }
+
+  .carousel-inner::before{
+    content: '';
+    position:left;
+    top:0;
+    left:0;
+    background:rgba(0,0,0,0.7);
+    z-index:1;
+  }
+
+  .w-auto{
+    height: 100vh;
+    width: 100vh;
+  }
+
+
+

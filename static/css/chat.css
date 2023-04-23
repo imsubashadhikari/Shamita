@@ -1,0 +1,20 @@
+.header{
+    text-align: center;
+    text-decoration: solid;
+    text-decoration: underline;
+    margin-top: 2rem;
+}
+.profile{
+    width: fit-content;
+    margin: auto;
+    display: block;
+
+
+}
+.profile-img{
+    width: 4rem;
+
+}
+.chat-box{
+    min-height: 28rem;
+}

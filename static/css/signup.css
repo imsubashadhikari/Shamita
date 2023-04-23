@@ -1,0 +1,41 @@
+body{
+    background: #6a84ae;
+}
+.container-fluid{
+    background: rgb(214, 230, 226);
+    background-image: none;
+}
+.nav-item{
+    float: right;
+}
+
+
+
+
+
+.login {
+    
+    width:25rem;
+    height:35rem;
+    padding: 20px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    align-items: end;
+
+}
+.btn{
+    color: white;
+   background-color: #2a578f;
+}
+.btn:hover{
+    color: white;
+
+    background-color: #0e325b;
+
+}
+d-inline-flex p-2 {
+    align-items: center;
+}

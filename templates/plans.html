@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>shamita-plans</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="/static/css/home.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-white nav navbar-nav navbar-right ">
+        <li><a href="{{url_for('home')}}"><img src="/static/img/logo.png" alt="Shamita-logo"
+                    style="width: 5rem; height:4rem;"></a></li>
+    </nav>
+    <div class="card-group">
+        <div class="card">
+            <img class="card-img-top" src="/static/img/sathi.png" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Sathi Plan</h5>
+                <p class="card-text">Sathi is a plan who has two similar user access for people who want to have communication and get mental relief. in short it is a virtual room for two clients who won't be knowing each other
+                </p>
+                <a href="{{ url_for('sathi') }}">
+                    <button type="button" class="btn btn-primary btn-custom btn-plan">Buy Plan</button>
+                </a>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="/static/img/sahayogi.png" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Sahayogi Plan</h5>
+                <p class="card-text">The sahayogi has a therapist appointed by 'shamita' itself which is a similar room like the plan 'sathi' but with a counseller.
+                </p>
+                <a href="{{ url_for('sahayogi') }}">
+                    <button type="button" class="btn btn-primary btn-custom btn-plan">Buy Plan</button>
+                </a>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="/static/img/samuha.png" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Samuha Plan</h5>
+                <p class="card-text">The samuha has a therapist appointed by 'shamita' itself and a 3 of others to share their stories like you. You are not anlone my friend</p>
+                <a href="{{ url_for('samuha') }}">
+                    <button type="button" class="btn btn-primary btn-custom btn-plan">Buy Plan</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

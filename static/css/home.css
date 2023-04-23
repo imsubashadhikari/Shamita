@@ -1,0 +1,78 @@
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    color: #333;
+    background:#6a84;
+  }
+  
+  .carousel-item active{
+    height: 100vh;
+    min-height: 300px;
+    position:absolute;
+  }
+
+  .carousel-inner::before{
+    content: '';
+    position:left;
+    top:0;
+    left:0;
+    background:rgba(0,0,0,0.7);
+    z-index:1;
+  }
+
+  .w-auto{
+    height: 100vh;
+    width: 100vh;
+  }
+
+.bio-left{
+  position: fixed;
+  width: fit-content;
+  margin-left:7rem;
+  margin-top:13rem
+}
+.bio-right{
+  position: fixed;
+  width: fit-content;
+  margin-left:62rem;
+  margin-top:13rem;
+  z-index: 0;
+}
+.btn-custom{
+  width: 8rem;
+  background-color: white;
+  color: black;
+  border: white;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.btn-custom::hov{
+  background-color:linear-gradient(180deg, red, yellow);
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+
+.card-img-top{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.btn-plan{
+  position: absolute;
+right:    35%;
+bottom:   5%;
+
+}
+.card{
+  height: 30rem;
+  margin: 2rem;
+  text-align: center;
+}
+.card-title{
+font-size: xx-large;
+font-weight: 900;
+}
